@@ -1,9 +1,7 @@
-
 import io.appium.java_client.MobileElement;
 import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.remote.MobileCapabilityType;
 import org.openqa.selenium.remote.DesiredCapabilities;
-import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
@@ -44,7 +42,7 @@ public class AppTest {
         } finally {
             if (registration) {
                 System.out.println("Create Account successful");
-                CreateTask.CreateTask(driver);
+                CreateTask.createTask(driver);
             }
         }
     }
@@ -65,7 +63,7 @@ public class AppTest {
         } finally {
             if (login) {
                 System.out.println("Log In successful");
-                CreateTask.CreateTask(driver);
+                CreateTask.createTask(driver);
             }
         }
 
